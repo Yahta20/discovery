@@ -1,41 +1,42 @@
-# `Discovery`
+# `Відкриття`
 
-Discover the world of microcontrollers through [Rust](https://www.rust-lang.org/)!
+Опануй силу мікроконтролерів за допомогою мови [Rust](https://www.rust-lang.org/)!
 
-There are currently two versions of this book. Both of them provide an
-introduction to microcontrollers and how to use Rust with them.
-The first is older and uses an F3 Discovery circuit board, while
-the second is newer and uses a micro:bit circuit board instead.
+# `Відкриття`
 
-- Read the newer book, using a micro:bit:
-  https://docs.rust-embedded.org/discovery/microbit
-- Read the older book, using an F3 discovery board:
-  https://docs.rust-embedded.org/discovery/f3discovery
-- Start working on the examples from this repository
-- You've got questions?
-    - Have a look at our [discussions section on
+Опануй силу мікроконтролерів за допомогою мови [Rust](https://www.rust-lang.org/)!
+
+Наразі є геть 2 версії цієї книги. Перша на прикладі використання плати 
+F3 Discovery сповідає про взаємодію мікроконтролерів та Rust, натомість друга
+новіша та сповідає про micro:bit.
+ 
+- [Осягнути micro:bit](https://docs.rust-embedded.org/discovery/microbit)
+- [Осягнути старішу F3 discovery board](https://docs.rust-embedded.org/discovery/f3discovery)
+- Почати працювати на прикладах з цього репозиторія 
+- Залишились питтання?
+    - Зазерни [discussions section on
       GitHub](https://github.com/rust-embedded/discovery/discussions)
-    - Maybe it has already been answered
-    - If not, start a new discussion
-- You've found an issue?
-    - Have a look at our [issues on
+    - Можливо це вже вирішино
+    - Якщо ні, створи нове обговорення
+- Якщо знайшов халепу?
+    - Зазерни [issues on
       GitHub](https://github.com/rust-embedded/discovery/issues)
-    - Maybe there is already a workaround
-    - If not, please open a new one - or even better - a [pull
-      request](https://github.com/rust-embedded/discovery/pulls) for solving
-      it
-- Have fun and enjoy!
+    - Можливо цього можна уникнути
+    - Якщо ні, будь ласка відкрий нову або навіть краще [pull
+      request](https://github.com/rust-embedded/discovery/pulls) щоб
+      вирішити це
+- Розважайся та насолоджуйся !
 
-This project is developed and maintained by the [Resources team][team].
+Створено та підтримується [Resources team][team].
 
-## License
+## Ліцензування
 
-The documentation is licensed under
+Докумет ліцезійований згідно
 
 - Creative Commons Attribution 4.0 License ([LICENSE-CC-BY](LICENSE-CC-BY)
   or https://creativecommons.org/licenses/by/4.0/legalcode)
 
-And the source code is licensed under either of
+А код заліцензійований аж
 
 - Apache License, Version 2.0 ([LICENSE-APACHE](LICENSE-APACHE) or
   http://www.apache.org/licenses/LICENSE-2.0)
@@ -43,19 +44,20 @@ And the source code is licensed under either of
 - MIT License ([LICENSE-MIT](LICENSE-MIT) or
   https://opensource.org/licenses/MIT)
 
-at your option.
+на твою думку.
 
-### Contribution
+### Вклад
 
-Unless you explicitly state otherwise, any contribution intentionally submitted
-for inclusion in the work by you, as defined in the Apache-2.0 license, shall be
-licensed as above, without any additional terms or conditions.
+Якщо ви прямо не вкажете інше, будь-який внесок, 
+навмисно поданий вами для включення в роботу, 
+як визначено в ліцензії Apache-2.0, має ліцензуватися, 
+як зазначено вище, без будь-яких додаткових положень чи умов.
 
-## Code of Conduct
+## Етикет
 
-Contribution to this crate is organized under the terms of the [Rust Code of
-Conduct][CoC], the maintainer of this crate, the [Resources team][team], promises
-to intervene to uphold that code of conduct.
+Внесок у цей проєкт організовано відповідно до [Rust Code of
+Conduct][CoC], а супроводжувач проєкт [Команда ресурсів][команда],
+обіцяє втрутитися, щоб підтримувати цей кодекс поведінки.
 
 [CoC]: CODE_OF_CONDUCT.md
 [team]: https://github.com/rust-embedded/wg#the-resources-team
