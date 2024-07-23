@@ -1,66 +1,63 @@
-# Discovery
+# Відкриття
 
-> Discover the world of microcontrollers through [Rust]!
-
+> Опануй силу мікроконтролерів за допомогою мови [Rust]!
 [Rust]: https://www.rust-lang.org/
 
-This book is an introductory course on microcontroller-based embedded systems that uses Rust as the
-teaching language rather than the usual C/C++.
+Ця книга є вступним курсом із вбудованих систем на основі мікроконтролерів, які використовують Rust як
+мову навчання, а не звичайний C/C++.
 
-## Scope
+## Межі використання
 
-The following topics will be covered (eventually, I hope):
+Будуть розглянуті наступні теми (я сподіваюся, з часом):
 
-- How to write, build, flash and debug an "embedded" (Rust) program.
+- Як написати, створити, прошити та налагодити «вбудовану» (Rust) програму.
 
-- Functionality ("peripherals") commonly found in microcontrollers: Digital input and output, Pulse
-  Width Modulation (PWM), Analog to Digital Converters (ADC), common communication protocols like
-  Serial, I2C and SPI, etc.
+- Функціональні можливості ("периферійні пристрої"),
+  які зазвичай зустрічаються в мікроконтролерах: цифровий вхід і вихід, широтно-імпульсна модуляція (ШІМ),
+  аналого цифрові перетворювачі (АЦП), загальні протоколи зв'язку, такі як послідовний, I2C і SPI, тощо.
 
-- Multitasking concepts: cooperative vs preemptive multitasking, interrupts, schedulers, etc.
+- Концепції багатозадачності: кооперативна проти випереджальної багатозадачності, переривання, планувальники тощо.
 
-- Control systems concepts: sensors, calibration, digital filters, actuators, open loop control,
-  closed loop control, etc.
+- Концепції систем керування: датчики, калібрування, цифрові фільтри, приводи, керування відкритим контуром, керування замкнутим контуром тощо.
 
-## Approach
+## Підхід
 
-- Beginner friendly. No previous experience with microcontrollers or embedded systems is required.
+- Зручний для початківців. Попередній досвід роботи з мікроконтролерами чи вбудованими системами не потрібен.
 
-- Hands on. Plenty of exercises to put the theory into practice. *You* will be doing most of the
-  work here.
+- Практика. Багато вправ для застосування теорії на практиці. *Ви* виконуватимете тут більшу частину роботи..
 
-- Tool centered. We'll make plenty use of tooling to ease development. "Real" debugging, with GDB,
-  and logging will be introduced early on. Using LEDs as a debugging mechanism has no place here.
+- Інструментно-орієнтоване. Ми будемо широко використовувати інструменти, щоб полегшити розробку.
+  «Справжнє» налагодження з GDB і журналювання буде введено на ранніх стадіях.
+  Використання світлодіодів як механізму налагодження тут не місце.
 
-## Non-goals
+## Приховане
 
-What's out of scope for this book:
+Що виходить за межі цієї книги:
 
-- Teaching Rust. There's plenty of material on that topic already. We'll focus on microcontrollers
-  and embedded systems.
+- Викладання Rust. На цю тему вже є багато матеріалів. Ми зосередимося на мікроконтролерах і вбудованих системах.
 
-- Being a comprehensive text about electric circuit theory or electronics. We'll just cover the
-  minimum required to understand how some devices work.
+- Вичерпні данні про теорію електричного кола чи електроніку.
+  Ми лише охопимо мінімум, необхідний для розуміння того, як працюють деякі пристрої.
 
-- Covering details such as linker scripts and the boot process. For example, we'll use existing tools
-  to help get your code onto your board, but not go into detail about how those tools work.
+- Охоплює такі деталі, як сценарії компонування та процес завантаження. Наприклад,
+  ми використаємо наявні інструменти, щоб допомогти розмістити ваш код на дошці,
+  але не будемо вдаватися в деталі того, як ці інструменти працюють.
 
-Also I don't intend to port this material to other development boards; this book will make exclusive
-use of the micro:bit development board.
+Також Я не збираюся переносити цей матеріал на інші розробки;
+у цій книзі буде використовуватися ексклюзивна плата розробки micro:bit.
 
-## Reporting problems
-
-The source of this book is in [this repository]. If you encounter any typo or problem with the code
-report it on the [issue tracker].
+## Сповіщення про проблеми
+Джерело цієї книги в [this repository]. 
+Якщо ви зіткнулися з будь-якою помилкою або проблемою з кодом, повідомте про це на [issue tracker].
 
 [this repository]: https://github.com/rust-embedded/discovery
 [issue tracker]: https://github.com/rust-embedded/discovery/issues
 
-## Other embedded Rust resources
+## Інші вбудовані ресурси Rust
 
-This Discovery book is just one of several embedded Rust resources provided by the
-[Embedded Working Group]. The full selection can be found at [The Embedded Rust Bookshelf]. This
-includes the list of [Frequently Asked Questions].
+Ця книга Discovery є лише одним із кількох вбудованих ресурсів Rust, які надає
+[Embedded Working Group]. Повний вибір можна знайти за посиланням [The Embedded Rust Bookshelf].
+Це включає в себе список [Frequently Asked Questions].
 
 [Embedded Working Group]: https://github.com/rust-embedded/wg
 [The Embedded Rust Bookshelf]: https://docs.rust-embedded.org
