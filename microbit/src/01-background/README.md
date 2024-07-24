@@ -1,82 +1,79 @@
-# Background
+# База
 
-## What's a microcontroller?
+## Що таке мікроконтроллер?
 
-A microcontroller is a *system* on a chip. Whereas your computer is made up of several discrete
-components: a processor, RAM, storage, an Ethernet port, etc.; a microcontroller has all those types
-of components built into a single "chip" or package. This makes it possible to build systems with
-fewer parts.
+Мікроконтроллер це *система* у чипі. Навідміну від комьютера зібраного з дискретних компонентів:
+процессор, оперативна та накопичувальна пам'ять, порт Ethernet, тощо; в мікроконтроллері все це
+вбудовано в одному чипіЦе дає можливість будувати системи з меньшою кількістью частин.
 
-## What can you do with a microcontroller?
+## Що ти можешь зробити з мікроконтроллером?
 
-Lots of things! Microcontrollers are the central part of what are known as "*embedded* systems".
-Embedded systems are everywhere, but you don't usually notice them. They control the machines that
-wash your clothes, print your documents, and cook your food. Embedded systems keep the buildings
-that you live and work in at a comfortable temperature, and control the components that make the
-vehicles you travel in stop and go.
 
-Most embedded systems operate without user intervention. Even if they expose a user interface like a
-washing machine does; most of their operation is done on their own.
+До біса чтого! Мікроконтроллер центральна фігура у оповіданні яке ми називаемо "*вбудовані* системи".
+Вбудовані системи скрізь, але ти зазвичай не звертаєш на них увагу. Вони контролюють машини що
+перуть твій одяг, друкують твої документи, готують твою їжу. В будівлях яких ти працюєш та живеш 
+вони підтримують сприятливу температуру, та конролють компоненти що творять рушійну силу у транспортному
+зобі яким ви подорожуєте.
 
-Embedded systems are often used to *control* a physical process. To make this possible, they have
-one or more devices to tell them about the state of the world ("sensors"), and one or more
-devices which allow them to change things ("actuators"). For example, a building climate control
-system might have:
+Більшість вбудованих систем працюють без втручання користувача. Навіть якщо є інтерфейс користувача 
+як в пральних машин; більшість їх роботи вони роблять самотужки.
 
-- Sensors which measure temperature and humidity in various locations.
-- Actuators which control the speed of fans.
-- Actuators which cause heat to be added or removed from the building.
+Вбудовані системи часто використовуються для *контролю* фізичного процесу. 
+Щоб зробити це можливим, вони мають один або кілька пристроїв, 
+які повідомляють їм про стан світу («сенсори»), і один або кілька пристроїв, 
+які дозволяють їм змінювати речі («приводи»). Наприклад, може бути система клімат-контролю будівлі:
 
-## When should I use a microcontroller?
+- Датчики, які вимірюють температуру та вологість у різних місцях.
+- Приводи, що регулюють швидкість вентиляторів.
+- Приводи, які викликають додавання або видалення тепла з будівлі.
 
-Many of the embedded systems listed above could be implemented with a computer running Linux (for
-example a "Raspberry Pi"). Why use a microcontroller instead? Sounds like it might be harder to
-develop a program.
+## Коли слід використовувати мікроконтролер?
 
-Some reasons might include:
+Багато вбудованих систем, перерахованих вище, можна реалізувати на комп’ютері під керуванням Linux 
+(наприклад наприклад "Raspberry Pi"). Навіщо замість цього використовувати мікроконтролер? 
+Здається, це може бути важче розробити програму.
 
-**Cost.** A microcontroller is much cheaper than a general purpose computer. Not only is the
-microcontroller cheaper; it also requires many fewer external electrical components to operate.
-This makes Printed Circuit Boards (PCB) smaller and cheaper to design and manufacture.
+Деякі причини можуть включати:
 
-**Power consumption.** Most microcontrollers consume a fraction of the power of a full blown
-processor. For applications which run on batteries, that makes a huge difference.
+**Ціна.** Мікроконтролер набагато дешевший, ніж комп'ютер загального призначення. 
+Мало того, що мікроконтролер дешевший; для роботи також потрібно набагато менше зовнішніх електричних компонентів. 
+Це робить друковані плати (PCB) меншими та дешевшими у розробці та виробництві.
 
-**Responsiveness.** To accomplish their purpose, some embedded systems must always react within a
-limited time interval (e.g. the "anti-lock" braking system of a car). If the system misses this
-type of *deadline*, a catastrophic failure might occur. Such a deadline is called a "hard real time"
-requirement. An embedded system which is bound by such a deadline is referred to as a "hard
-real-time system". A general purpose computer and OS usually has many software components which
-share the computer's processing resources. This makes it harder to guarantee execution of a program
-within tight time constraints.
+**Споживання енергії.** Більшість мікроконтролерів споживають лише частку потужності, 
+ніж повномасштабні процесор. Для програм, які працюють від батарейок, це має величезне значення.
 
-**Reliability.** In systems with fewer components (both hardware and software), there is less to go
-wrong!
+**Чуйність.** Щоб досягти своєї мети, деякі вбудовані системи повинні завжди реагувати протягом 
+обмеженого інтервалу часу (наприклад, «антиблокувальна» гальмівна система автомобіля). 
+Якщо система пропустить цей тип *дедлайну*, може статися катастрофічний збій. 
+Такий кінцевий термін називається вимогою «жорсткого реального часу». Вбудована система, яка обмежена таким терміном,
+називається "системою жорсткого реального часу". Комп’ютер загального призначення та ОС зазвичай мають 
+багато програмних компонентів, які спільно використовують ресурси обробки комп’ютера. 
+Через це важче гарантувати виконання програми в жорсткі часові обмеження.
 
-## When should I *not* use a microcontroller?
+**Надійність.** У системах з меншою кількістю компонентів (як апаратного, так і програмного забезпечення) залишається менше неправильно!
 
-Where heavy computations are involved. To keep their power consumption low, microcontrollers have
-very limited computational resources available to them. For example, some microcontrollers don't
-even have hardware support for floating point operations. On those devices, performing a simple
-addition of single precision numbers can take hundreds of CPU cycles.
+## Коли мені *не* використовувати мікроконтролер?
 
-## Why use Rust and not C?
+Там, де задіяні важкі обчислення. Для підтримки низького енергоспоживання мікроконтролери 
+мають дуже обмежені обчислювальні ресурси. Наприклад, деякі мікроконтролери навіть 
+не мають апаратної підтримки для операцій з плаваючою комою. На цих пристроях виконання 
+простого додавання чисел одинарної точності може зайняти сотні циклів ЦП.
 
-Hopefully, I don't need to convince you here as you are probably familiar with the language
-differences between Rust and C. One point I do want to bring up is package management. C lacks an
-official, widely accepted package management solution whereas Rust has Cargo. This makes development
-*much* easier. And, IMO, easy package management encourages code reuse because libraries can be
-easily integrated into an application which is also a good thing as libraries get more "battle
-testing".
+## Навіщо використовувати Rust, а не C?
 
-## Why should I not use Rust?
+Сподіваюся, мені не потрібно переконувати вас тут, оскільки ви, мабуть, знайомі з 
+мовними відмінностями між Rust і C. Один момент, який я хочу підняти, це керування пакетами. 
+C не має офіційного, широко прийнятого рішення для керування пакунками, тоді як у Rust є Cargo. 
+Це *набагато* полегшує розвиток. І, IMO, просте керування пакетами заохочує повторне використання коду, 
+оскільки бібліотеки можна легко інтегрувати в програму, що також добре, оскільки 
+бібліотеки отримують більше «бойового тестування».
 
-Or why should I prefer C over Rust?
+## Чому б мені не використовувати Rust?
 
-The C ecosystem is way more mature. Off the shelf solutions for several problems already exist. If
-you need to control a time sensitive process, you can grab one of the existing commercial Real Time
-Operating Systems (RTOS) out there and solve your problem. There are no commercial, production-grade
-RTOSes in Rust yet so you would have to either create one yourself or try one of the ones that are
-in development. You can find a list of those in the [Awesome Embedded Rust] repository.
+Або чому я маю віддати перевагу C, а не Rust?
+
+Екосистема C набагато зріліша. Готові рішення для кількох проблем уже існують. Якщо
+вам потрібно контролювати чутливий до часу процес, ви можете взяти один із існуючих комерційних Real Time
+Operating Systems (RTOS) це вирішить вашу проблему. У Rust ще немає комерційних RTOS виробничого класу, тож вам доведеться або створити їх самостійно, або спробувати одну з тих, що перебувають у розробці. Ви можете знайти їх список у репозиторії [Awesome Embedded Rust].
 
 [Awesome Embedded Rust]: https://github.com/rust-embedded/awesome-embedded-rust#real-time-operating-system-rtos
